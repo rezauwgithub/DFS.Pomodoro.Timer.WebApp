@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-import * as settings from './__app_settings__';
+import * as settings from '../__app_settings__';
 
-import logo from './logo.svg';
-import './App.css';
+import '../styles/App.css';
 
 
 class App extends Component {
@@ -15,11 +14,10 @@ class App extends Component {
           <title>{settings.APP_TITLE}</title>
         </Helmet>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">{settings.APP_TITLE}</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Description and Instructions
         </p>
       </div>
     );
