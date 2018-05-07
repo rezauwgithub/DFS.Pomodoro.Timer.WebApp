@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const formatCounter = (value) => {
+const formatCounterDisplay = (value) => {
   return value.toString().padStart(2, "0");
 };
 
@@ -10,7 +10,7 @@ const formatCounter = (value) => {
 export default (props) => (
   <div>
     <span>
-      {formatCounter(props.minutes)}:{formatCounter(props.seconds)}
+      {formatCounterDisplay(props.minutes)}:{formatCounterDisplay(props.seconds)}
     </span>
   </div>
 );

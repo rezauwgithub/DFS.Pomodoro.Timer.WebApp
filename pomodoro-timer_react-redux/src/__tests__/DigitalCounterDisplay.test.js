@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import DigitalCounter from '../components/DigitalCounter.js';
+import DigitalCounter from '../components/DigitalCounterDisplay.js';
 
 
-describe('Digital Counter', () => {
+describe('Digital Counter Display', () => {
   
   it('Should render formatted minutes & seconds', () => {
 
