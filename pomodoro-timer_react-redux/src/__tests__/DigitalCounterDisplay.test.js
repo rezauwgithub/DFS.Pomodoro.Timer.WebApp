@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import DigitalCounter from '../components/DigitalCounterDisplay.js';
+import DigitalCounterDisplay from '../components/DigitalCounterDisplay.js';
 
 
 describe('Digital Counter Display', () => {
@@ -9,7 +9,7 @@ describe('Digital Counter Display', () => {
   it('Should render formatted minutes & seconds', () => {
 
     const wrapper = shallow( 
-      <DigitalCounter 
+      <DigitalCounterDisplay 
         minutes={24} 
         seconds={4} 
       />
