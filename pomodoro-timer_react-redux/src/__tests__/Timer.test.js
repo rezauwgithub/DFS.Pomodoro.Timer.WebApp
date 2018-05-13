@@ -8,7 +8,7 @@ import DigitalCounterDisplay from '../components/presentational/DigitalCounterDi
 
 describe('Timer', () => {
 
-  let wrapper, CounterView;
+  let wrapper, counterView;
 
   beforeEach(() => {
     jest.useFakeTimers();
@@ -59,7 +59,7 @@ describe('Timer', () => {
     });
 
     expect(wrapper.contains(
-      <DigitalCounter minutes={25} isRunning={false} counterView={CounterView} />
+      <DigitalCounter minutes={25} isRunning={false} counterView={counterView} />
     )).toBe(true);
 
   });
