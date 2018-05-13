@@ -5,6 +5,10 @@ import * as settings from '../../__app_settings__';
 
 import '../../styles/App.css';
 
+import AppDashboardContainer from '../containers/AppDashboardContainer';
+import TimerContainer from '../containers/TimerContainer';
+
+
 
 class App extends Component {
   render() {
@@ -19,6 +23,10 @@ class App extends Component {
         <p className="App-intro">
           Description and Instructions
         </p>
+        <div>
+          <TimerContainer />
+          <AppDashboardContainer />
+        </div>
       </div>
     );
   }
