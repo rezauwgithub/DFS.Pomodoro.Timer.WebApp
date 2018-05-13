@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 
-import * as settings from '../__app_settings__';
+import * as settings from '../../__app_settings__';
 
-import '../styles/App.css';
+import '../../styles/App.css';
 
 
 class App extends Component {

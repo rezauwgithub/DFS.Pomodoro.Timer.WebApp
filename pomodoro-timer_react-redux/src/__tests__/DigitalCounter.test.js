@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import DigitalCounter from '../components/DigitalCounter';
-import DigitalCounterDisplay from '../components/DigitalCounterDisplay';
+import DigitalCounter from '../components/presentational/DigitalCounter';
+import DigitalCounterDisplay from '../components/presentational/DigitalCounterDisplay';
 
 
 describe('Digital Counter', () => {
