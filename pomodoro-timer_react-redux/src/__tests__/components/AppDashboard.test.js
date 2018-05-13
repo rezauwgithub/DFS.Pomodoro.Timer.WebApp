@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import AppDashboard from '../components/presentational/AppDashboard';
+import AppDashboard from '../../components/presentational/AppDashboard';
 
 
 describe('AppDashboard', () => {

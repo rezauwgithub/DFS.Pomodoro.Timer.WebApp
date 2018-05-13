@@ -1,7 +1,6 @@
-import { combineReducers } from 'redux';
-
+import appdashboard from './appdashboard/reducer';
 
 
 export {
-  
+  appdashboard
 };

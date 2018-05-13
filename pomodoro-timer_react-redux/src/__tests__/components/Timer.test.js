@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import Timer from '../components/presentational/Timer';
-import DigitalCounter from '../components/presentational/DigitalCounter';
-import DigitalCounterDisplay from '../components/presentational/DigitalCounterDisplay';
+import Timer from '../../components/presentational/Timer';
+import DigitalCounter from '../../components/presentational/DigitalCounter';
+import DigitalCounterDisplay from '../../components/presentational/DigitalCounterDisplay';
 
 
 describe('Timer', () => {
