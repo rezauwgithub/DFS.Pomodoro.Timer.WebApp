@@ -16,7 +16,7 @@ export default class Timer extends Component {
   componentWillReceiveProps(nextProps) {
 
     if (nextProps.isRunning) {
-      
+      this.minutesPerRound(1, nextProps.numOfRounds, nextProps.minutesPerRound, nextProps.minutesPerShortBreak, nextProps.minutesPerLongBreak);
 
     } else {
       this.updateDigitalCounter(nextProps.minutesPerRound);
@@ -27,7 +27,7 @@ export default class Timer extends Component {
 
   minutesPerRound(currentRound, numOfRounds, minutesPerRound, minutesPerShortBreak, minutesPerLongBreak) {
     this.runRound(minutesPerRound, () => {
-      this.break(currentRound + 1, numOfRounds, minutesPerRound, minutesPerShortBreak, minutesPerLongBreak)
+      this.break(currentRound, numOfRounds, minutesPerRound, minutesPerShortBreak, minutesPerLongBreak)
     });
   }
 
@@ -41,7 +41,7 @@ export default class Timer extends Component {
   }
 
 
-  runBreak(minutes, callback) {
+  runRound(minutes, callback) {
 
     this.updateDigitalCounter(minutes);
 
@@ -58,9 +58,9 @@ export default class Timer extends Component {
   }
 
 
-  updateDigitalCounter(val) {
+  updateDigitalCounter(value) {
     this.setState({
-      digitalCounter: val
+      digitalCounter: value
     });
   }
 

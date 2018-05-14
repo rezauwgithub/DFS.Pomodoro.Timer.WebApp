@@ -17,19 +17,23 @@ export default class DigitalCounter extends Component {
   componentDidMount() {
     
     setInterval(() => {
+
       if (this.props.isRunning) {
+        
         if (this.state.seconds === 0) {
+
           this.setState({
-            minutes: this.state.minutes -1,
+            minutes: this.state.minutes - 1,
             seconds: 59
           })
         }
-
-      } else {
-        this.setState({
-          seconds: this.state.seconds - 1
-        });
+        else {
+          this.setState({
+            seconds: this.state.seconds - 1
+          });
+        }
       }
+
     }, 1000);
 
   }

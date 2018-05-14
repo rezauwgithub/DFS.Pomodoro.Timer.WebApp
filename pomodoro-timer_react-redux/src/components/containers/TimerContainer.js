@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
     minutesPerShortBreak: state.appdashboard.minutesPerShortBreak,
     minutesPerLongBreak: state.appdashboard.minutesPerLongBreak,
     numOfRounds: state.appdashboard.numOfRounds,
-    isRunning: state.appdashboard.isRunning
+    isRunning: state.timer.isRunning
   }
 };
 

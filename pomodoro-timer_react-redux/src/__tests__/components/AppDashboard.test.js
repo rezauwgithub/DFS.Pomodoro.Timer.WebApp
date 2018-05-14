@@ -36,7 +36,7 @@ describe('AppDashboard', () => {
     });
 
     expect(wrapper.find("[name='minutesPerRound']").prop('disabled')).toBe(false);
-    expect(wrapper.find("[value='StartBtn']").prop('disabled')).toBe(false);
+    expect(wrapper.find("[value='Start']").prop('disabled')).toBe(false);
 
   });
 
@@ -48,7 +48,7 @@ describe('AppDashboard', () => {
     });
 
     expect(wrapper.find("[name='minutesPerRound']").prop('disabled')).toBe(true);
-    expect(wrapper.find("[value='StartBtn']").prop('disabled')).toBe(true);
+    expect(wrapper.find("[value='Start']").prop('disabled')).toBe(true);
 
   });
 

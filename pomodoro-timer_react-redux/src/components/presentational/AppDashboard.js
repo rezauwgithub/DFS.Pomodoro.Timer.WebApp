@@ -19,11 +19,11 @@ export default (props) => (
         <FormElement label="# of rounds" name="numOfRounds" value={props.numOfRounds} onChange={props.changeParameter} disabled={props.isRunning} />
       </div>
       <div>
-        <input type="submit" disabled={props.isRunning} value="StartBtn" />
+        <input type="submit" disabled={props.isRunning} value="Start" />
       </div>
     </form>
     <div>
-      <button onClick={props.pause} disabed={!props.isRunning}>Pause</button>
+      <button onClick={props.pause} disabled={!props.isRunning}>Pause</button>
     </div>
   </div>
 );
