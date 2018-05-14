@@ -10,7 +10,7 @@ const formatCounterDisplay = (value) => {
 export default (props) => (
   <div>
     <span>
-      {formatCounterDisplay(props.minutes)}:{formatCounterDisplay(props.seconds)}
+      <timerSize>{formatCounterDisplay(props.minutes)}:{formatCounterDisplay(props.seconds)}</timerSize>
     </span>
   </div>
 );

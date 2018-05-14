@@ -35,26 +35,23 @@ export default class Timer extends Component {
   break(currentRound, numOfRounds, minutesPerRound, minutesPerShortBreak, minutesPerLongBreak) {
     const minutesForBreak = (currentRound % numOfRounds === 0) ? minutesPerLongBreak : minutesPerShortBreak;
 
-    this.runBreak(minutesForBreak, () => {
+    this.runRound(minutesForBreak, () => {
         this.minutesPerRound(currentRound + 1, numOfRounds, minutesPerRound, minutesPerShortBreak, minutesPerLongBreak);
     });
   }
 
 
   runRound(minutes, callback) {
-
-    this.updateDigitalCounter(minutes);
-
-    new Promise(resolve => setTimeout(
-      resolve, (minutes * 60 * 1000)
+    this.updateDigitalCounter(minutes)
+    
+    new Promise((resolve) =>
+      setTimeout(resolve, minutes * 60 * 1000)
     ).then(() => {
       if (this.props.isRunning) {
 
-
-
-        callback();
+        callback()
       }
-    }));
+    })
   }
 
 
