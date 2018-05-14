@@ -15,6 +15,6 @@ export const start = {
   type: types.START
 }
 
-export const pause = {
-  type: types.PAUSE
+export const stopReset = {
+  type: types.STOP_RESET
 }

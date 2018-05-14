@@ -21,12 +21,12 @@ describe('Timer reducer', () => {
   });
 
 
-  describe('Pause', () => {
+  describe('Stop and Reset', () => {
 
     it('Should set isRunning to false', () => {
 
       state = reducer(state, {
-        type: types.PAUSE
+        type: types.STOP_RESET
       });
 
       expect(state.isRunning).toBe(false);

@@ -33,9 +33,9 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(timerActions.start);
     },
 
-    pause: (event) => {
+    stopReset: (event) => {
       event.preventDefault();
-      dispatch(timerActions.pause);
+      dispatch(timerActions.stopReset);
     }
 
 

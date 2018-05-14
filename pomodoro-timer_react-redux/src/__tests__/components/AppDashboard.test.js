@@ -9,7 +9,7 @@ describe('AppDashboard', () => {
   let wrapper;
 
   const start = jest.fn();
-  const pause = jest.fn();
+  const stopReset = jest.fn();
   const changeParameter = jest.fn();
 
 
@@ -22,7 +22,7 @@ describe('AppDashboard', () => {
         numOfRounds={2}
         isRunning={false}
         start={start}
-        pause={pause}
+        stopReset={stopReset}
         changeParameter={changeParameter}
       />
     );
@@ -62,11 +62,11 @@ describe('AppDashboard', () => {
   });
 
 
-  it('Should call the Pause function after the Pause button is clicked', () => {
+  it('Should call the stopReset function after the Stop and Reset button is clicked', () => {
 
     wrapper.find('button').simulate('click');
 
-    expect(pause).toBeCalled();
+    expect(stopReset).toBeCalled();
 
   });
 

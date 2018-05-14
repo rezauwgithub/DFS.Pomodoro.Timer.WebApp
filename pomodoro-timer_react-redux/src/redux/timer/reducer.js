@@ -24,7 +24,7 @@ export default function reduce(state = initialState, action = {}) {
         isRunning: true
       }
     
-    case types.PAUSE:
+    case types.STOP_RESET:
       return {
         ...state,
         isRunning: false
